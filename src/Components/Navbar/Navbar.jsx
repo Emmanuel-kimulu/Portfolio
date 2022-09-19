@@ -26,14 +26,16 @@ function Navbar() {
                         <Link spy={true} to='Portifolio' smooth={true}>
                             <li>Portifolio</li>
                         </Link>
-                        <Link spy={true} to='Testimonials' smooth={true}>
-                            <li>Testimonials</li>
+                        <Link spy={true} to='Quotes' smooth={true}>
+                            <li>Quotes</li>
                         </Link>
                     </ul>
                 </div>
-                <button className="button n-button ">
-                    contact
-                </button>
+                <Link spy={true} to='contact' smooth={true} >
+                    <button className="button n-button ">
+                        contact
+                    </button>
+                </Link>
             </div>
 
         </div>

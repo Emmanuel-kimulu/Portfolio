@@ -4,6 +4,7 @@ import Wave from '../../img/wave.png'
 import Twitter from '@iconscout/react-unicons/icons/uil-twitter'
 import Facebook from '@iconscout/react-unicons/icons/uil-facebook'
 import Github from '@iconscout/react-unicons/icons/uil-github'
+import Linkedin from '@iconscout/react-unicons/icons/uil-linkedin'
 
 
 
@@ -14,10 +15,12 @@ function Footer() {
             <img src={Wave} alt="" style={{ width: '100%' }} />
             <div className="f-content">
                 <span>kimuluemmanuel@gmail.com</span>
+                <span>mwendwakimulu@gmail.com</span>
+                <span>+254 798 576 316</span>
                 <div className="f-icons">
-                    <Twitter color="blue" size='3rem' />
-                    <Facebook color="white" size='3rem' />
-                    <Github color="white" size='3rem' />
+                    <a href='https://twitter.com/EmmanuelKimulu' target="blank"> <Twitter color="white" size='3rem' /></a>
+                    <a href='https://www.facebook.com/emmanuel.kimulu'><Facebook color="white" size='3rem' /></a>
+                    <a href='https://github.com/Emmanuel-kimulu' target="blank" > <Github color="white" size='3rem' /></a>
                 </div>
             </div>
         </div>

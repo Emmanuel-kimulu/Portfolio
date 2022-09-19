@@ -24,8 +24,8 @@ function Services() {
             {/* left side */}
             <div className="awesome">
                 <span style={{ color: darkMode ? 'white' : '' }}>My Awesome</span>
-                <span>Services</span>
-                <span style={{ color: darkMode ? 'white' : '' }}>Are looking for someone to deliver some work for you? <br />here is what i can do for you.</span>
+                <span>Skills</span>
+                <span style={{ color: darkMode ? 'white' : '' }}>These are the skills I have been learning and practising.  <br />currently I am on proficiency level and <br /> I am hoping to learn and  gain more experience.</span>
 
                 <a href={Resume} download>
                     <button className="button s-button">Download CV</button>
@@ -46,8 +46,8 @@ function Services() {
                     style={{ left: '24rem' }}>
                     <Card
                         emoji={HeartEmoji}
-                        heading={'Design'}
-                        detail={"Figma, Sketch, Adobe Xd, illustrator"}
+                        heading={'UI/UX'}
+                        detail={"Figma, Adobe Xd, illustrator"}
                     />
 
                 </motion.div>
@@ -60,7 +60,7 @@ function Services() {
                     <Card
                         emoji={Glasses}
                         heading={'Developer'}
-                        detail={"Html, Css, Javascript, React"}
+                        detail={"Html, Css, Javascript, React Android"}
                     />
 
                 </motion.div>
@@ -72,8 +72,8 @@ function Services() {
                     style={{ top: '20rem', left: '17rem' }}>
                     <Card
                         emoji={Humble}
-                        heading={'UI/UX'}
-                        detail={"Html, Css, Javascript, React"}
+                        heading={'General'}
+                        detail={"Computer Repair, Video Editing(novice),Data entry, etc "}
                     />
 
                 </motion.div>

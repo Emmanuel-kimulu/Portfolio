@@ -35,7 +35,8 @@ function Contact() {
             initial={{ marginTop: "8rem" }}
             whileInView={{ marginTop: "4rem" }}
             transition={transition}
-            className="contact-form">
+            className="contact-form"
+            id="contact" t>
             <div className="w-left">
                 <div className="awesome">
                     <span style={{ color: darkMode ? 'white' : '' }}>Get in touch</span>

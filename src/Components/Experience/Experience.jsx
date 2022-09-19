@@ -23,7 +23,7 @@ function Experience() {
           whileInView={{ rotate: 0 }}
           viewport={{ margin: '-40px' }}
           transition={{ duration: 3.5, type: 'spring' }}
-          className="circle">10+</motion.div>
+          className="circle">5+</motion.div>
 
         <span>Completed</span>
         <span>Projects</span>
@@ -35,7 +35,7 @@ function Experience() {
           whileInView={{ rotate: 0 }}
           viewport={{ margin: '-40px' }}
           transition={{ duration: 3.5, type: 'spring' }}
-          className="circle">5</motion.div>
+          className="circle">3+</motion.div>
         <span>Companies</span>
         <span>Work</span>
       </div>

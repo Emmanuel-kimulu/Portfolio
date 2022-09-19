@@ -1,13 +1,14 @@
 import React from 'react'
 import './Works.css'
-import Upwork from '../../img/Upwork.png'
+import Oracom from '../../img/oracom.png'
 import Fiverr from '../../img/fiverr.png'
-import Amazon from '../../img/amazon.png'
-import Shopify from '../../img/Shopify.png'
-import Facebook from '../../img/Facebook.png'
+import Steelaxis from '../../img/steelaxis.png'
+import Smartbibles from '../../img/smartbibles.jpg'
+import Storihut from '../../img/storihut.png'
 import { themeContext } from '../../Context';
 import { useContext } from "react";
 import { motion } from "framer-motion";
+import { Link } from 'react-scroll'
 
 
 
@@ -22,19 +23,16 @@ function Works() {
         <div className="works">
             {/* left side */}
             <div className="awesome">
-                <span style={{ color: darkMode ? 'white' : '' }} >Works for all these</span>
+                <span style={{ color: darkMode ? 'white' : '' }} >Works with all these</span>
                 <span>Brands and clients</span>
-                <span style={{ color: darkMode ? 'white' : '' }}>Are looking for someone to deliver some work for you?
+                <span style={{ color: darkMode ? 'white' : '' }}>Are you looking for someone to deliver some work for you? I am available.
                     <br />
-                    here is what i can do for you.
+
                     <br />
-                    here is what i can do for you.
-                    <br />
-                    here is what i can do for you.
-                    <br />
-                    here is what i can do for you.
                 </span>
-                <button className="button s-button">Hire Me</button>
+                <Link spy={true} to='contact' smooth={true}>
+                    <button className="button s-button">Hire Me</button>
+                </Link>
 
                 <div className="blur s-blur1" style={{ background: "#ABF1FF94" }}></div>
             </div>
@@ -49,19 +47,19 @@ function Works() {
                     transition={{ duration: 3.5, type: 'spring' }}
                     className="w-mainCircle">
                     <div className="w-secCircle">
-                        <img src={Upwork} alt="" />
+                        <img src={Oracom} alt="" />
                     </div>
                     <div className="w-secCircle">
                         <img src={Fiverr} alt="" />
                     </div>
                     <div className="w-secCircle">
-                        <img src={Amazon} alt="" />
+                        <img src={Steelaxis} alt="" />
                     </div>
                     <div className="w-secCircle">
-                        <img src={Shopify} alt="" />
+                        <img src={Smartbibles} alt="" />
                     </div>
                     <div className="w-secCircle">
-                        <img src={Facebook} alt="" />
+                        <img src={Storihut} alt="" />
                     </div>
 
                 </motion.div>

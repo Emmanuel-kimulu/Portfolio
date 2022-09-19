@@ -36,8 +36,12 @@
 }
 
 .i-button {
-  width: 6.5rem;
+  width: 7.5rem;
   height: 2rem;
+}
+.btn-intro> :nth-child(2){
+  margin: 10px;
+  width: 7.5rem;
 }
 
 .i-icons {
@@ -45,11 +49,15 @@
   display: flex;
   gap: 0rem;
 }
+
 .i-icons > * {
   transform: scale(0.5);
+
 }
 .i-icons > *:hover {
   cursor: pointer;
+  color: var(--black);
+ 
 }
 
 .i-right {

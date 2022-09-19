@@ -1,6 +1,5 @@
 import React from 'react'
 import './Intro.css'
-import Github from '../../img/github.png';
 import LinkedIn from '../../img/linkedin.png';
 import Instagram from '../../img/instagram.png';
 import Vector1 from '../../img/Vector1.png'
@@ -13,6 +12,12 @@ import FloatingDiv from '../FloatingDiv/FloatingDiv';
 import { themeContext } from '../../Context';
 import { useContext } from "react";
 import { motion } from "framer-motion";
+import Resume from './resume.pdf'
+import { Link } from 'react-scroll'
+import Twitter from '@iconscout/react-unicons/icons/uil-twitter'
+import Github from '@iconscout/react-unicons/icons/uil-github'
+import Linkedin from '@iconscout/react-unicons/icons/uil-linkedin'
+
 
 
 
@@ -31,8 +36,17 @@ function Intro() {
                     <span>Junior Frontend developer an UI/UX Designer looking to grow to a higher level </span>
 
                 </div>
+                <div className="btn-intro">
+                    <Link spy={true} to='contact' smooth={true} >
+                        <button className="button i-button">Hire me</button>
+                    </Link>
 
-                <button className="button i-button">Hire me</button>
+                    <a href={Resume} download>
+                        <button className="button i-button">Download Cv</button>
+                    </a>
+                </div>
+
+
 
                 <motion.div
                     initial={{ marginTop: "6rem" }}
@@ -40,9 +54,16 @@ function Intro() {
                     transition={transition}
 
                     className="i-icons">
-                    <a href=''><img src={Github} alt="github" /></a>
-                    <a href=''><img src={LinkedIn} alt="linkedin" /></a>
-                    <a href=''><img src={Instagram} alt="instagram" /></a>
+                    <a href='https://github.com/Emmanuel-kimulu' target="blank" >
+                        <Github color="#366BA1" size='5rem' />
+                    </a>
+
+                    <a href='https://twitter.com/EmmanuelKimulu' target="blank">
+                        <Linkedin color="#366BA1" size='5rem' />
+                    </a>
+                    <a href='https://twitter.com/EmmanuelKimulu' target="blank">
+                        <Twitter color="#366BA1" size='5rem' />
+                    </a>
 
                 </motion.div>
             </div>
@@ -74,7 +95,7 @@ function Intro() {
                     transition={transition}
                     style={{ top: '18rem', left: '0rem' }}
                     className="floating-div">
-                    <FloatingDiv image={thumbup} txt1='Best Design' txt2='Award' />
+                    <FloatingDiv image={thumbup} txt1=' UI/UX' txt2='Designer' />
                 </motion.div>
 
                 {/* blur div */}
@@ -91,7 +112,7 @@ function Intro() {
 
 
             </div>
-        </div>
+        </div >
     )
 }
 
