@@ -47,9 +47,9 @@ function Portfolio() {
                 <SwiperSlide>
                     <img src={Ecommerce} alt="" />
                 </SwiperSlide>
-                <SwiperSlide>
+                {/* <SwiperSlide>
                     <img src={Hoc} alt="" />
-                </SwiperSlide>
+                </SwiperSlide> */}
                 <SwiperSlide>
                     <img src={MusicApp} alt="" />
                 </SwiperSlide>
