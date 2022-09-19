@@ -10,11 +10,14 @@ import Contact from "./Components/Contact/Contact";
 import Footer from "./Components/Footer/Footer";
 import { themeContext } from './Context';
 import { useContext } from "react";
+import ScrollTop from "./Components/ScrollTop/ScrollTop";
+
 
 function App() {
 
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
+
 
   return (
     <div className="App"
@@ -23,6 +26,7 @@ function App() {
       color : darkMode? 'white': ''
     }}
     >
+      <ScrollTop/>
       <Navbar />
       <Intro />
       <Services />
@@ -31,6 +35,7 @@ function App() {
       <Portfolio/>
       <Testimonial/>
       <Contact/>
+      
       <Footer/>
     </div>
   );
