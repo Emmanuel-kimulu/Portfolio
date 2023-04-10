@@ -1,0 +1,22 @@
+[debug] [2023-04-10T07:39:47.158Z] ----------------------------------------------------------------------
+[debug] [2023-04-10T07:39:47.161Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\User\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2023-04-10T07:39:47.162Z] CLI Version:   11.17.0
+[debug] [2023-04-10T07:39:47.162Z] Platform:      win32
+[debug] [2023-04-10T07:39:47.162Z] Node Version:  v18.12.1
+[debug] [2023-04-10T07:39:47.164Z] Time:          Mon Apr 10 2023 10:39:47 GMT+0300 (East Africa Time)
+[debug] [2023-04-10T07:39:47.165Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-04-10T07:39:47.193Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2023-04-10T07:39:47.671Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-04-10T07:39:47.672Z] > authorizing via signed-in user (kimuluemmanuel@gmail.com)
+[debug] [2023-04-10T07:39:47.675Z] [iam] checking project manukimulu for permissions ["firebase.projects.get"]
+[debug] [2023-04-10T07:39:47.679Z] > refreshing access token with scopes: []
+[debug] [2023-04-10T07:39:47.680Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2023-04-10T07:39:47.680Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-04-10T07:39:48.098Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2023-04-10T07:39:48.098Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-04-10T07:39:48.160Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/manukimulu:testIamPermissions [none]
+[debug] [2023-04-10T07:39:48.161Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/manukimulu:testIamPermissions x-goog-quota-user=projects/manukimulu
+[debug] [2023-04-10T07:39:48.161Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/manukimulu:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-04-10T07:39:48.324Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2023-04-10T07:39:48.324Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}

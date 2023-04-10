@@ -33,7 +33,7 @@ function Intro() {
                 <div className="i-name">
                     <span style={{ color: darkMode ? 'white' : '' }} >Hi! I Am</span>
                     <span>Emmanuel Kimulu</span>
-                    <span>Junior Frontend developer an UI/UX Designer looking to grow to a higher level </span>
+                    <span>Junior Frontend developer and UI/UX Designer looking to grow to a higher level </span>
 
                 </div>
                 <div className="btn-intro">
