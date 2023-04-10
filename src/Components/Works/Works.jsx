@@ -1,7 +1,7 @@
 import React from 'react'
 import './Works.css'
 import Oracom from '../../img/oracom.png'
-import Fiverr from '../../img/fiverr.png'
+import Bvat from '../../img/Bvat.png'
 import Steelaxis from '../../img/steelaxis.png'
 import Smartbibles from '../../img/smartbibles.jpg'
 import Storihut from '../../img/storihut.png'
@@ -50,7 +50,7 @@ function Works() {
                         <img src={Oracom} alt="" />
                     </div>
                     <div className="w-secCircle">
-                        <img src={Fiverr} alt="" />
+                        <img src={Bvat} alt="" />
                     </div>
                     <div className="w-secCircle">
                         <img src={Steelaxis} alt="" />

@@ -47,7 +47,7 @@ function Services() {
                     <Card
                         emoji={HeartEmoji}
                         heading={'UI/UX'}
-                        detail={"Figma, Adobe Xd, illustrator"}
+                        detail={"Figma, Adobe Xd, illustrator, Video Editing(novice)"}
                     />
 
                 </motion.div>
@@ -60,7 +60,7 @@ function Services() {
                     <Card
                         emoji={Glasses}
                         heading={'Developer'}
-                        detail={"Html, Css, Javascript, React Android"}
+                        detail={"Html, Css,Javascript,Wordpress, Reactjs, Android"}
                     />
 
                 </motion.div>
@@ -73,7 +73,7 @@ function Services() {
                     <Card
                         emoji={Humble}
                         heading={'General'}
-                        detail={"Computer Repair, Video Editing(novice),Data entry, etc "}
+                        detail={"Computer Repair, system mangement,,Data entry, Design "}
                     />
 
                 </motion.div>
