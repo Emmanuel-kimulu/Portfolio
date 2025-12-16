@@ -1,9 +1,17 @@
 import React from 'react'
 import './Portfolio.css'
-import Sidebar from '../../img/sidebar.png'
-import Ecommerce from '../../img/ecommerce.png'
-import musicapp1 from '../../img/musicapp1.png'
-import MusicApp from '../../img/musicapp.png'
+import D1 from '../../img/Designs/1.png'
+import D2 from '../../img/Designs/2.png'
+import D3 from '../../img/Designs/3.png'
+import D4 from '../../img/Designs/4.png'
+import D5 from '../../img/Designs/5.png'
+import D6 from '../../img/Designs/6.png'
+import D7 from '../../img/Designs/7.png'
+import D8 from '../../img/Designs/8.png'
+import D9 from '../../img/Designs/9.png'
+import D10 from '../../img/Designs/10.png'
+import D11 from '../../img/Designs/11.png'
+import D12 from '../../img/Designs/12.png'
 import { themeContext } from '../../Context';
 import { useContext } from "react";
 import { motion } from "framer-motion";
@@ -18,12 +26,18 @@ function Portfolio() {
     const transition = { duration: 5, type: 'spring' }
 
     const pieces = [
-        { src: Sidebar, title: 'Concrete study', orientation: 'portrait' },
-        { src: Ecommerce, title: 'E‑commerce landing', orientation: 'landscape' },
-        { src: musicapp1, title: 'Music player UI', orientation: 'portrait' },
-        { src: MusicApp, title: 'Streaming dashboard', orientation: 'landscape' },
-        { src: Sidebar, title: 'Brand direction', orientation: 'portrait' },
-        { src: Ecommerce, title: 'Product grid', orientation: 'landscape' },
+        { src: D2, title: 'Design 2' },
+        { src: D9, title: 'Design 9' },
+        { src: D6, title: 'Design 6' },
+        { src: D1, title: 'Design 1' },
+        { src: D10, title: 'Design 10' },
+        { src: D3, title: 'Design 3' },
+        { src: D5, title: 'Design 5' },
+        { src: D11, title: 'Design 11' },
+        { src: D7, title: 'Design 7' },
+        { src: D4, title: 'Design 4' },
+        { src: D12, title: 'Design 12' },
+        { src: D8, title: 'Design 8' },
     ];
 
     return (
@@ -45,12 +59,11 @@ function Portfolio() {
                 {pieces.map((piece, idx) => (
                     <motion.div
                         key={idx}
-                        className={`portfolio-item ${piece.orientation}`}
+                        className="portfolio-item"
                         whileHover={{ scale: 1.02 }}
                         transition={{ type: 'spring', stiffness: 260, damping: 18 }}
                     >
                         <img src={piece.src} alt={piece.title} />
-                        <div className="portfolio-item__label">{piece.title}</div>
                     </motion.div>
                 ))}
             </div>

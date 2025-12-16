@@ -28,36 +28,28 @@
 /* ===== GRID GALLERY ===== */
 .portfolio-grid {
     width: min(1200px, 100%);
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    grid-auto-rows: 200px;
-    gap: 1rem;
+    column-count: 3;
+    column-gap: 1.1rem;
     margin-top: 1rem;
 }
 
 .portfolio-item {
     position: relative;
+    display: block;
+    padding: 12px;
+    margin: 0 0 1.1rem;
     border-radius: 18px;
-    overflow: hidden;
     background: var(--cardColor, #ffffff);
     box-shadow: 0 12px 22px rgba(0, 0, 0, 0.16);
     transition: transform 0.25s ease, box-shadow 0.25s ease;
+    break-inside: avoid;
 }
 
 .portfolio-item img {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    height: auto;
+    object-fit: contain;
     display: block;
-}
-
-/* Span rules to mix portrait + landscape */
-.portfolio-item.landscape {
-    grid-column: span 2;
-}
-
-.portfolio-item.portrait {
-    grid-row: span 2;
 }
 
 .portfolio-item:hover {
@@ -92,14 +84,7 @@
     }
 
     .portfolio-grid {
-        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-        grid-auto-rows: 170px;
-    }
-
-    .portfolio-item.landscape,
-    .portfolio-item.portrait {
-        grid-column: span 1;
-        grid-row: span 1;
+        column-count: 2;
     }
 }
 
@@ -110,5 +95,9 @@
 
     .portfolio__heading span:nth-of-type(2) {
         font-size: 2rem;
+    }
+
+    .portfolio-grid {
+        column-count: 1;
     }
 }

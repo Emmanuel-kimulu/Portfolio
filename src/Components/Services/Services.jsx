@@ -4,6 +4,7 @@ import './Services.css'
 import HeartEmoji from '../../img/heartemoji.png';
 import Glasses from '../../img/glasses.png';
 import Humble from '../../img/humble.png';
+import Crown from '../../img/crown.png';
 import Card from '../Card/Card';
 import Resume from './resume.pdf'
 import { themeContext } from '../../Context';
@@ -38,44 +39,48 @@ function Services() {
 
             {/* right side */}
             <div className="cards">
-                {/* first card */}
                 <motion.div
-                    initial={{ left: "29rem" }}
-                    whileInView={{ left: "24rem" }}
                     transition={transition}
-                    style={{ left: '24rem' }}>
+                    whileHover={{ y: -10 }}
+                >
                     <Card
                         emoji={HeartEmoji}
                         heading={'UI/UX'}
                         detail={"Figma, Adobe Xd, illustrator, Video Editing(novice)"}
                     />
-
                 </motion.div>
 
                 <motion.div
-                    initial={{ left: "-4rem" }}
-                    whileInView={{ left: "1rem" }}
                     transition={transition}
-                    style={{ top: '8rem', left: '1rem' }}>
+                    whileHover={{ y: -10 }}
+                >
+                    <Card
+                        emoji={Crown}
+                        heading={'Graphic Design'}
+                        detail={"Adobe Illustrator, Photoshop, InDesign, After Effects, Lightroom"}
+                    />
+                </motion.div>
+
+                <motion.div
+                    transition={transition}
+                    whileHover={{ y: -10 }}
+                >
                     <Card
                         emoji={Glasses}
                         heading={'Developer'}
                         detail={"Html, Css,Javascript,Wordpress, Reactjs, Android"}
                     />
-
                 </motion.div>
 
                 <motion.div
-                    initial={{ top: "15rem" }}
-                    whileInView={{ top: "20rem" }}
                     transition={transition}
-                    style={{ top: '20rem', left: '17rem' }}>
+                    whileHover={{ y: -10 }}
+                >
                     <Card
                         emoji={Humble}
                         heading={'General'}
                         detail={"Computer Repair, system mangement,,Data entry, Design "}
                     />
-
                 </motion.div>
 
                 <div className="blur s-blur2" stye={{ background: "var(--purple)" }}></div>
