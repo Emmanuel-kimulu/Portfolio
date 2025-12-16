@@ -26,25 +26,86 @@
     position: absolute;
 }
 
-.w-mainCircle> :nth-child(1){
-    top: -3rem;
-    left: 6rem;
+.w-mainCircle {
+    left: 9rem;
+    position: relative;
+    width: 18rem;
+    height: 18rem;
+    border-radius: 100%;
+    box-shadow: var(--boxShadow);
+    top: 2rem;
+    background: white;
 }
-.w-mainCircle> :nth-child(2){
-    top: 5rem;
-    left: -3rem;
+
+/* common positioning */
+.w-mainCircle > div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform-origin: center;
 }
-.w-mainCircle> :nth-child(3){
-    top: 6rem;
-    left: 5rem;
+
+/* center logo (child 3) */
+.w-mainCircle > :nth-child(3) {
+    transform: translate(-50%, -50%);
 }
-.w-mainCircle> :nth-child(4){
-    top: 15rem;
-    left: 5rem;
+
+:root {
+    --radius: 9rem;
 }
-.w-mainCircle> :nth-child(5){
-    top: 5rem;
-    left: 15rem;
+
+/* common base */
+.w-mainCircle > div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform-origin: center;
+}
+
+/* center logo (icipe – child 3) */
+.w-mainCircle > :nth-child(3) {
+    transform: translate(-50%, -50%);
+}
+
+/* outer logos — evenly spaced & upright */
+.w-mainCircle > :nth-child(1) {
+    transform:
+        translate(-50%, -50%)
+        rotate(0deg)
+        translateY(calc(-1 * var(--radius)))
+        rotate(0deg);
+}
+
+.w-mainCircle > :nth-child(2) {
+    transform:
+        translate(-50%, -50%)
+        rotate(72deg)
+        translateY(calc(-1 * var(--radius)))
+        rotate(-72deg);
+}
+
+.w-mainCircle > :nth-child(4) {
+    transform:
+        translate(-50%, -50%)
+        rotate(144deg)
+        translateY(calc(-1 * var(--radius)))
+        rotate(-144deg);
+}
+
+.w-mainCircle > :nth-child(5) {
+    transform:
+        translate(-50%, -50%)
+        rotate(216deg)
+        translateY(calc(-1 * var(--radius)))
+        rotate(-216deg);
+}
+
+.w-mainCircle > :nth-child(6) {
+    transform:
+        translate(-50%, -50%)
+        rotate(288deg)
+        translateY(calc(-1 * var(--radius)))
+        rotate(-288deg);
 }
 
 
@@ -63,7 +124,7 @@
 }
 
 .w-secCircle> img {
-    transform: scale(0.6);
+    transform: scale(0.4);
 }
 
 .w-backCircle{

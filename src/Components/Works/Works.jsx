@@ -4,6 +4,7 @@ import Oracom from '../../img/oracom.png'
 import Bvat from '../../img/Bvat.png'
 import Steelaxis from '../../img/steelaxis.png'
 import Smartbibles from '../../img/smartbibles.jpg'
+import icipe from '../../img/icipe.png'
 import Storihut from '../../img/storihut.png'
 import { themeContext } from '../../Context';
 import { useContext } from "react";
@@ -51,6 +52,9 @@ function Works() {
                     </div>
                     <div className="w-secCircle">
                         <img src={Bvat} alt="" />
+                    </div>
+                    <div className="w-secCircle">
+                        <img src={icipe} alt="" />
                     </div>
                     <div className="w-secCircle">
                         <img src={Steelaxis} alt="" />
